@@ -1,6 +1,11 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
-IncludeTemplateLangFile(__FILE__);
+
+$aAsset = \Bitrix\Main\Page\Asset::getInstance();
+
+$aAsset->addCss(SITE_TEMPLATE_PATH . 'style.css');
+$aAsset->addJs("htpps://maxcdn.bootstrap.etc....");
+
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">

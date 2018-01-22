@@ -1,24 +1,29 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
+$APPLICATION->SetTitle("Skillogram");
 ?>
 
-<?$APPLICATION->IncludeComponent("bitrix:news.list","",Array(
+<?$APPLICATION->IncludeComponent("bitrix:news.list","posts",Array(
         "DISPLAY_DATE" => "Y",
         "DISPLAY_NAME" => "Y",
         "DISPLAY_PICTURE" => "Y",
         "DISPLAY_PREVIEW_TEXT" => "Y",
         "AJAX_MODE" => "Y",
-        "IBLOCK_TYPE" => "news",
-        "IBLOCK_ID" => "3",
+        "IBLOCK_TYPE" => "skillogram",
+        "IBLOCK_ID" => "5",
         "NEWS_COUNT" => "20",
         "SORT_BY1" => "ACTIVE_FROM",
         "SORT_ORDER1" => "DESC",
         "SORT_BY2" => "SORT",
         "SORT_ORDER2" => "ASC",
         "FILTER_NAME" => "",
-        "FIELD_CODE" => Array("ID"),
-        "PROPERTY_CODE" => Array("DESCRIPTION"),
+        "FIELD_CODE" => [
+            "ID",
+            "DETAIL_PICTURE",
+        ],
+        "PROPERTY_CODE" => [
+            "AVATAR",
+        ],
         "CHECK_DATES" => "Y",
         "DETAIL_URL" => "",
         "PREVIEW_TRUNCATE_LEN" => "",
@@ -34,7 +39,7 @@ $APPLICATION->SetTitle("Мебельная компания");
         "PARENT_SECTION" => "",
         "PARENT_SECTION_CODE" => "",
         "INCLUDE_SUBSECTIONS" => "Y",
-        "CACHE_TYPE" => "A",
+        "CACHE_TYPE" => "N",
         "CACHE_TIME" => "3600",
         "CACHE_FILTER" => "Y",
         "CACHE_GROUPS" => "Y",
@@ -46,7 +51,7 @@ $APPLICATION->SetTitle("Мебельная компания");
         "PAGER_DESC_NUMBERING" => "Y",
         "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
         "PAGER_SHOW_ALL" => "Y",
-        "PAGER_BASE_LINK_ENABLE" => "Y",
+        "PAGER_BASE_LINK_ENABLE" => "N",
         "SET_STATUS_404" => "Y",
         "SHOW_404" => "Y",
         "MESSAGE_404" => "",
