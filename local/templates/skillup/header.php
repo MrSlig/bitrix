@@ -3,7 +3,7 @@
 
 $aAsset = \Bitrix\Main\Page\Asset::getInstance();
 
-$aAsset->addCss(SITE_TEMPLATE_PATH . 'style.css');
+$aAsset->addCss(SITE_TEMPLATE_PATH . '/style.css');
 $aAsset->addJs("htpps://maxcdn.bootstrap.etc....");
 
 ?>
