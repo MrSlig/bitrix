@@ -1,8 +1,8 @@
 <?
 /* @var CBitrixComponentTemplate $this */
 
-$this->addExternalCss();
-$this->addExternalJs();
+$this->addExternalCss('');
+$this->addExternalJs('');
 
 //echo '<pre>';
 //print_r($arResult);
