@@ -1,8 +1,11 @@
 <?
+/* @var CBitrixComponentTemplate $this */
+
+$this->addExternalCss();
+$this->addExternalJs();
+
 //echo '<pre>';
 //print_r($arResult);
-//$this->addExternalCss();
-//$this->addExternalJs();
 ?>
 
 <? if(count($arResult['ITEMS']) > 0): ?>
